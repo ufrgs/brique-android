@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_graph" app:startDestination="@id/navigation_board">
+
+    <fragment android:id="@+id/navigation_board"
+              android:name="br.ufrgs.brique.presentation.ui.main.board.BoardFragment"
+              android:label="BoardFragment"
+    />
+
+    <fragment android:id="@+id/navigation_offered"
+              android:name="br.ufrgs.brique.presentation.ui.main.offered.OfferedFragment"
+              android:label="OfferedFragment"
+    />
+
+</navigation>

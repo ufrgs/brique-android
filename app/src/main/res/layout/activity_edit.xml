@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_image_card"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:id="@+id/lbl_add_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Adicionar uma Imagem"/>
+
+
+                    <ImageView
+                            android:id="@+id/iv_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                    />
+
+                    <TextView
+                            android:id="@+id/lbl_change_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="#90000000"
+                            android:gravity="center"
+                            android:text="Alterar imagem"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="@color/md_white_1000"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nome"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Descrição"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_patrimonio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:hint="Patrimônio"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tv_origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:hint="Origem"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    android:text="Salvar"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Brique</string>
+
+    <string name="title_board">Mural de bens</string>
+    <string name="title_offered">Bens oferecidos</string>
+
+    <string name="request_ufrgs_login">Faça seu login na UFRGS</string>
+    <string name="user">Cartão UFRGS</string>
+    <string name="password">Senha</string>
+    <string name="login">Login</string>
+    <string name="forgot_password_question">Esqueceu sua senha?</string>
+    <string name="loading">Carregando</string>
+    <string name="wrong_user_or_password">Usuário ou senha incorreto</string>
+    <string name="user_needed">Informe o cartão da UFRGS</string>
+    <string name="password_needed">Informe a senha</string>
+
+    <string name="login_error">Cartão ou senha invalidos.</string>
+
+    <string name="password_portal">Senha do portal do aluno</string>
+</resources>

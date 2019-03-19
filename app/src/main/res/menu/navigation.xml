@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_board"
+            android:icon="@drawable/ic_assignment_black"
+            android:title="@string/title_board"/>
+
+    <item
+            android:id="@+id/navigation_offered"
+            android:icon="@drawable/ic_person_outline_black"
+            android:title="@string/title_offered"/>
+
+
+</menu>
